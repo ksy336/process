@@ -28,11 +28,17 @@
 .input-feedback
 	display: flex
 	//justify-content: space-between
-	align-items: center
+	//align-items: center
 	flex-direction: row !important
+	@media only screen and (min-width: $mobile-s) and (max-width: $tablet-l)
+		flex-direction: column !important
 .input-feedback >*
 	margin-right: 30px !important
 	display: inline-block
+	margin-bottom: 0
+	@media only screen and (min-width: $mobile-s) and (max-width: $tablet-l)
+		width: 100%
+		margin-bottom: 20px
 .feedback-button
 	width: 258px
 	height: 46px
@@ -41,3 +47,22 @@
 	font-weight: 600
 	font-size: 15px
 	line-height: 18px
+	color: $color-white
+	display: inline-block
+	text-align: center
+	margin-top: 20px
+.phone-me-text span
+	border-bottom: 1px solid $color-white
+	cursor: pointer
+.nav-block
+	display: flex
+	flex-direction: column
+	//align-items: center
+.nav-block span
+	font-style: normal
+	font-weight: 600
+	font-size: 15px
+	line-height: 18px
+	color: $color-black
+	text-align: left
+

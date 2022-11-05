@@ -15,8 +15,8 @@
 import 'Styles/index.sass';
 // slider
 const slider = () => {
-	const slides = document.querySelectorAll(".slider__content"); // div
-	const slider = document.querySelector(".slider-content"); // container
+	const slides = document.querySelectorAll(".card-partners"); // div
+	const slider = document.querySelector(".partners-container"); // container
 	const dotsContainer = document.querySelector(".dots");
 	let currSlide = 0;
 	let maxSlideLength = slides.length;

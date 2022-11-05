@@ -1,5 +1,50 @@
 .footer
 	background: $color-background
+	padding-top: 48px
+	padding-bottom: 48px
 
 .footer-last-content.layout-4-column
+	display: flex
+	justify-content: space-between
+	//align-items: center
+	@media only screen and (min-width: $mobile-s) and (max-width: $tablet-l)
+		flex-direction: column
+.info-footer
+	display: block
+	margin-top: 16px
+	font-weight: 400
+	font-size: 14px
+	line-height: 17px
+	color: $color-border
+.markerting
+	display: flex
+	flex-direction: column
+	align-items: flex-end
+.markerting span
+	font-weight: 700
+	font-size: 14px
+	line-height: 17px
+	color: $color-black
+	text-align: left
 
+.marketing-phone
+	font-size: 14px
+	line-height: 17px
+	color: $color-button
+	font-weight: 700
+.policy
+	padding-top: 20px
+.policy-content
+	display: flex
+	justify-content: space-between
+	@media only screen and (min-width: $mobile-s) and (max-width: $tablet-l)
+		flex-direction: column
+.info-policy-text
+	font-weight: 400
+	font-size: 14px
+	line-height: 17px
+	color: $color-black
+.block.photo img
+	width: 325px
+	height: 46px
+	cursor: pointer

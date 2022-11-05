@@ -328,12 +328,13 @@ block body
 						input(placeholder="Номер телефона" type="tel")
 						button.feedback-button Перезвоните мне
 					span.phone-me-text Нажимая на кнопку "Перезвонить мне" я соглашаюсь с
-						span политикой конфиденциальности
+						span  политикой конфиденциальности
 		footer.footer
 			.wrapper
 				.footer-last-content.layout-4-column
-					.logo-block
-						img(src=require('Images/logo.png'))
+					.header-logo
+						img(src=require('Images/logo-footer.svg'))
+						span.info-footer 2019 ООО "Процессинг 24"
 					.nav-block
 						span Карта АЗС
 						span АЗС по регионам
@@ -345,11 +346,13 @@ block body
 						span Личный кабинет
 					.markerting
 						span Отдел продаж
-						span 8 (495) 127-82-80
+						.marketing-phone 8 (495) 127-82-80
 
-					.policy
-						span Политика конфиденциальности
-						.block.photo
+		.policy
+			.wrapper
+				.policy-content
+					span.info-policy-text Политика конфиденциальности
+					.block.photo
 							img(src=require("Images/photo.png"))
 
 
@@ -383,22 +386,5 @@ block body
 
 
 
-	.promo-popup
-		.wrapper
-			.promo-popup-content
-	main.promo-main
-		.wrapper
-
-			.promo-about-phone
-
-
-	.promo-section-green
-		.wrapper
-
-
-
-	footer.promo-footer
-		.wrapper
-			.promo-section-footer
 
 

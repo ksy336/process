@@ -18,6 +18,8 @@ button
 	width: 176px
 	height: 46px
 	display: inline-block
+	@media only screen and (min-width: $mobile-s) and (max-width: $tablet-l)
+		width: 100%
 .button-feedback:hover,
 .button-login:hover
 	transform: scale(0.95)
@@ -31,3 +33,5 @@ button
 .button-submit
 	width: 258px
 	height: 46px
+	@media only screen and (min-width: $mobile-s) and (max-width: $tablet-l)
+		width: 100%
