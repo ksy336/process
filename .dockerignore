@@ -1,0 +1,11 @@
+node_modules
+build
+dev
+.git
+.idea
+.dockerignore
+.env
+.DS_Store
+.gitlab-ci.yml
+.gitignore
+.deploy

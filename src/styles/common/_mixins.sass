@@ -1,0 +1,108 @@
+//	Подчеркнутый текст полупрозрачным бордером если hover = true, 
+//	не добавляются некоторые стили, чтобы не скидывать их после применения миксина
+=border-text($borderColor: $color-main, $hover: false)
+	color: $borderColor
+	text-decoration: none
+	@if $hover
+		border-color: $borderColor
+	@else
+		border-bottom: 1px solid rgba($borderColor, .3)
+		display: inline
+
+//	Стандартный clearfix миксин
+=clearfix
+	&:after
+		content: ""
+		display: table
+		clear: both
+
+//	Миксин из nib
+//	использование: +size(100px)
+=size($width, $height: $width)
+	width: $width
+	height: $height
+
+// Обрезает длинную строку многоточием
+=ellipsis
+	white-space: nowrap
+	overflow: hidden
+	text-overflow: ellipsis
+
+// Скидывает стили, наложенные миксином border-text 
+//	в основном используется у ссылок
+=reset-link
+	color: inherit
+	text-decoration: none
+	border-bottom: none
+	padding-bottom: 0
+
+// кастомный placeholder
+//	+placeholder
+//		color: #000
+=placeholder
+	&::-webkit-input-placeholder
+		@content
+	&:-moz-placeholder
+		@content
+	&::-moz-placeholder
+		@content
+	&:-ms-input-placeholder
+		@content
+
+// создает крестик через псевдо-элементы
+=cross($color: #000, $length: 30px, $thickness: 3px)
+	+size($length)
+	position: relative
+	&:before,
+	&:after
+		content: ''
+		background: $color
+		height: $thickness
+		width: $length
+		margin: 0 auto
+		position: absolute
+		right: 0
+		top: 50%
+		display: block
+	&:before
+		transform: translateY(-50%) rotate(-45deg)
+	&:after
+		transform: translateY(-50%) rotate(45deg)
+
+/// Returns the opposite direction of each direction in a list
+/// @author Kitty Giraudel
+/// @param {List} $directions - List of initial directions
+/// @return {List} - List of opposite directions
+@function opposite-direction($directions)
+	$opposite-directions: ()
+	$direction-map: ('top': 'bottom', 'right': 'left', 'bottom': 'top', 'left': 'right', 'center': 'center', 'ltr': 'rtl', 'rtl': 'ltr')
+	
+	@each $direction in $directions
+		$direction: to-lower-case($direction)
+		
+		@if map-has-key($direction-map, $direction)
+			$opposite-directions: append($opposite-directions, unquote(map-get($direction-map, $direction)))
+		@else
+			@warn "No opposite direction can be found for `#{$direction}`. Direction omitted."
+	
+	@return $opposite-directions
+
+// Треугольник
+@mixin triangle($direction: 'right', $size: 1em, $stretch: 1, $color: #000)
+	@if not index(top right bottom left, $direction)
+		@error "Direction must be either `top`, `right`, `bottom` or `left`."
+
+	width: 0
+	height: 0
+	content: ''
+	z-index: 2
+	border-#{opposite-direction($direction)}: ($size * $stretch * 2) solid $color
+	
+	$perpendicular-borders: $size solid transparent
+	
+	@if $direction == top or $direction == bottom
+		border-left: $perpendicular-borders
+		border-right: $perpendicular-borders
+	@else if $direction == right or $direction == left
+		border-bottom: $perpendicular-borders
+		border-top: $perpendicular-borders

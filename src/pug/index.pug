@@ -1,0 +1,394 @@
+extends extends/_layout
+
+block body
+	header.header
+		.wrapper
+			.header-content
+				.header-logo
+					img(src=require('Images/logo.png'))
+				.header-block
+					.header-contacts
+						img.photo-phone(src=require('Images/phone2.svg'))
+						span.tel-text 8 (495) 127-82-80
+					.header-buttons
+						button.button-feedback Напишите нам
+						button.button-login
+							img(src=require('Images/user.svg'))
+							span Личный кабинет
+	.header-second-line
+		.wrapper
+			.header-flex-block
+				.header-fuel Доставка топлива
+				.header-cards
+					select Топливные карты
+						option Топливные карты
+						option Топливные карты
+				.header-azs
+					select АЗС
+						option АЗС
+						option АЗС
+				.header-price Цены на топливо
+				.header-company
+					select О компании
+						option О компании
+						option О компании
+				.header-contact Контакты
+	main.main
+		article.delivery
+			.wrapper
+				.delivery-content
+					h1 Доставка топлива
+				.delivery-card
+					.delivery-heading
+						h2 Быстрый
+							span.fuel-text заказ топлива
+						form.form-first
+							.block-form
+								.input-info
+									label Ваше имя
+									input(placeholder="Иван" type="text")
+								.input-info
+									label Номер телефона
+									input(placeholder="+7 (___) ___-__-__" type="tel")
+								.button-block
+									button.button-submit Заказать топливо
+							.block-agree
+								input.checkbox-custom(type="checkbox" id="check")
+								label(for="check")
+								span.agree-text Я согласен с условиями обработки данных
+
+		article.price
+			.wrapper
+				.price-content
+					h2 Стоимость топлива
+				.price-table
+					.price-table-head
+						span Сорт топлива
+						span Экологический класс
+						span Производитель
+						span Наличный расчет
+						span Безналичный расчет
+					.price-table-body.layout-3-column
+						.price-first-column
+							.first ДТ
+						.price-second-column
+							.first-row ЕВРО-5
+							.second-row ЕВРО-4
+						.price-third-column
+							.first-row.block
+								.block-first-line
+									span Газпромнефть
+									span 45.43 р.
+									span 44.43 р.
+								.block-second-line
+									span Лукойл
+									span 45.16 р.
+									span 43.98 р.
+								.block-third-line
+									span Роснефть
+									span 42.34 р.
+									span 41.64 р.
+							.second-row-block
+								.block-first-line
+									span Газпромнефть
+									span -
+									span -
+								.block-second-line
+									span Лукойл
+									span 41.16 р.
+									span 40.67 р.
+					.price-table-body.layout-3-column
+						.price-first-column
+							.first АИ-95
+						.price-second-column
+							.first-row ЕВРО-5
+							.second-row ЕВРО-4
+							.third-row ЕВРО-3
+						.price-third-column
+							.first-row.block
+								.block-first-line
+									span Газпромнефть
+									span 45.43 р.
+									span 44.43 р.
+								.block-third-line
+									span Роснефть
+									span 42.34 р.
+									span 41.64 р.
+								.block-second-line
+									span Лукойл
+									span 45.16 р.
+									span 43.98 р.
+							.second-row-block
+								.block-second-line
+									span Лукойл
+									span 41.16 р.
+									span 40.67 р.
+								.block-first-line
+									span Газпромнефть
+									span -
+									span -
+
+							.third-row-block
+								.block-first-line
+									span Роснефть
+									span 42.34 р.
+									span 41.64 р.
+								.block-second-line
+									span Газпромнефть
+									span -
+									span -
+								.block-third-line
+									span Лукойл
+									span 41.16 р.
+									span 40.67 р.
+		article.delivery-fuel-block
+			.wrapper
+				.delivery-container
+					h2 Топливо с доставкой
+					.delivery-card-block.layout-3-column
+						form.form-list
+							.form-block-fuel
+								label Вид топлива
+								select ДТ
+									option ДТ
+									option ДТ
+							.form-block-fuel
+								label Объем топлива
+								input.input-range(placeholder="1670 литров")
+								input.slider(id="range" type="range")
+								//img(src=require("Images/"))
+							.form-block-fuel
+								label Место доставки
+								input(placeholder="Укажите место" type="text")
+							.form-block-fuel
+								label Ваше имя
+								input(placeholder="Иван" type="text")
+							.form-block-fuel
+								label Номер телефона
+								input(placeholder="+7 (___) ___-__-__" type="tel")
+						.card-delivery
+							.all-block
+								span.all-text Итого
+							.delivery-price
+								span Стоимость топлива
+								span 77 350.00 ₽
+							.deliver-description-price
+								.delivery-price.no-border
+									span Цена за литр:
+									span 45.50 ₽
+								.delivery-description
+									span Цена и стоимость указаны ориентировочно. Точные цену и стоимость собщит наш менеджер при подтверждении заявки.
+							.deliver-description-price.last-block
+								.delivery-price.no-border
+									span Выгода:
+									span.big-text 6 953.00 ₽
+								.delivery-description.no-bottom-border
+									span При цене на АЗС  49.59 ₽  за литр, цены актуальны на  23.11.2020 г.
+							button.button-submit-delivery Заказать топливо
+		article.working-info
+			.wrapper
+				h2.text-working Как мы работаем
+				.working-info-container.layout-3-column
+					.card-info
+						.card-item
+							.working-card
+								.image-block
+									img(src=require('Images/click.svg'))
+								.time
+									span 1-3 мин.
+									.arrow
+										img(src=require('Images/Vector 3.svg'))
+						.card-content
+							span.content-text Оформление заявки
+							p.description-text Заполните заявку на сайте, укажите удобное для вас место приезда заправщика, сорт и количество топлива, которое хотите купить
+					.card-info
+						.card-item
+							.working-card
+								.image-block
+									img(src=require('Images/phone.svg'))
+								.time
+									span 1-3 мин.
+									.arrow
+										img(src=require('Images/Vector 3.svg'))
+						.card-content
+							span.content-text Подтверждение заявки менеджером
+							p.description-text Дождитесь звонка нашего менеджера для уточнения условий заказа
+					.card-info
+						.card-item
+							.working-card
+								.image-block
+									img(src=require('Images/gas.svg'))
+								.time
+									span 30-90 мин.
+
+						.card-content
+							span.content-text Заправка вашего автомобиля
+							p.description-text В назначенное время приедет заправщик и заправит автомобиль топливом.
+								span Если у заказчика есть действующий договор на топливные карты, то при оплате можно провести транзакцию через терминал. Переносное устройство есть у каждого заправщика
+		article.plus-content
+			.wrapper
+				h2 Преимущества сервиса
+				.plus-container.layout-3-column
+					.plus-block
+						.img-group
+							span Качество топлива
+							img(src=require('Images/Group.svg'))
+						.text-block
+							p Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.
+					.plus-block
+						.img-group
+							span Бережем ваше время и нервы
+							img(src=require('Images/clock.svg'))
+						.text-block
+							p Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.
+					.plus-block
+						.img-group
+							span Цена
+							img(src=require('Images/ruble.svg'))
+						.text-block
+							p Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.
+					.plus-block
+						.img-group
+							span Ваш комфорт—наша забота
+							img(src=require('Images/place.svg'))
+						.text-block
+							p Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.
+					.plus-block
+						.img-group
+							span Безопасность процесса
+							img(src=require('Images/shield.svg'))
+						.text-block
+							p Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.
+					.plus-block
+						.img-group
+							span Несколько ТС в одном месте?
+							img(src=require('Images/way.svg'))
+						.text-block
+							p Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.
+		article.certificates
+			.wrapper
+				.certifivates-heading
+				h2 Сертификаты качества топлива
+				img(src=require("Images/arrow left.png"))
+				img(src=require("Images/arrow right.png"))
+				.certificates-container.layout-4-column
+					.card-certificate
+						img(src=require("Images/image 1.png"))
+					.card-certificate
+						img(src=require("Images/image 2.png"))
+					.card-certificate
+						img(src=require("Images/image 3.png"))
+					.card-certificate
+						img(src=require("Images/image 3.png"))
+		article.partners
+			.wrapper
+				h2 Наши партнеры
+				.partners-container.layout-4-column
+					.card-partners
+						img(src=require("Images/LUK_OIL_Logo_kyr 1.png"))
+					.card-partners
+						img(src=require("Images/gazprom.png"))
+					.card-partners
+						img(src=require("Images/Rosneft_Logo 1.png"))
+					.card-partners
+						img(src=require("Images/Tatneft-Logo 1.png"))
+		article.feedback
+			.wrapper
+				.feedback-heading
+					h2 Отзывы
+					img(src=require("Images/arrow left.png"))
+					img(src=require("Images/arrow right.png"))
+				.feedback-container.layout-2-column
+					.text-feedback
+						span Гусев Вячеслав
+						span Индивидуальный предприниматель
+						p.text-description Velit, lectus sit urna tincidunt augue. Cursus vulputate pellentesque faucibus euismod. Diam pharetra, non, ut integer dui feugiat porttitor at. Non, dignissim enim viverra fringilla sit. Etiam justo a dignissim sociis vitae, nisi, justo, feugiat.
+					.text-feedback
+						span Зеленов Евгений
+						span Гененеральный директор трансопртной компании
+						p.text-description  Mi auctor sit habitasse sed mi cras ullamcorper massa sed. In augue fames sodales pretium, at scelerisque. Pulvinar a mattis pharetra mi, aliquet sem tristique lorem eleifend. Nisl, scelerisque ut libero, pellentesque. Tincidunt vestibulum volutpat lacus imperdiet morbi vulputate tristique facilisi.
+						a(href="#") Подробнее
+				button.button-ask Читать все отзывы
+
+		footer.footer
+			.wrapper
+				.footer-container
+					h2 Остались вопросы
+					p Готовы ответить на любой Ваш вопрос. Оставьте свой номер телефона и мы свяжемся с вами в ближайшее время
+					form.form-feedback
+						input(placeholder="Ваше имя" type="text")
+						input(placeholder="Номер телефона" type="tel")
+						button.feedback Перезвоните мне
+						span Нажимая на кнопку "Перезвонить мне" я соглашаюсь с
+							span политикой конфиденциальности
+				.footer-last-content.layout-4-column
+					.logo-block
+						img(src=require('Images/logo.png'))
+					.nav-block
+						span Карта АЗС
+						span АЗС по регионам
+						span АЗС по брендам
+						span Доставка топлива
+					.nav-block
+						span Контакты
+						span О компании
+						span Личный кабинет
+					.markerting
+						span Отдел продаж
+						span 8 (495) 127-82-80
+
+					.policy
+						span Политика конфиденциальности
+						.block.photo
+							img(src=require("Images/photo.png"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.promo-popup
+		.wrapper
+			.promo-popup-content
+	main.promo-main
+		.wrapper
+
+			.promo-about-phone
+
+
+	.promo-section-green
+		.wrapper
+
+
+
+	footer.promo-footer
+		.wrapper
+			.promo-section-footer
+
+

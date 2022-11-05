@@ -1,0 +1,180 @@
+@import 'Styles/common/_vars.sass'
+@import 'Styles/common/_mixins.sass'
+@import 'Styles/common/_vars.sass'
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+*
+	box-sizing: border-box
+body
+	// color #4d5259
+	//color: #000
+	font-family: $fontFamily
+	overflow-x: hidden
+	//background: #E5E5E5
+	//-webkit-font-smoothing: antialiased // mac fix
+	//-webkit-text-stroke: 1px transparent // mac fix
+	-webkit-text-size-adjust: 100% // stop iphone resize when orientation landscape
+body.noscroll
+	overflow: hidden
+// -------
+
+h1
+	font-family: $fontFamily
+	font-style: normal
+	font-weight: 700
+	font-size: 48px
+	line-height: 59px
+	color: $color-black
+	@media only screen and (min-width: $mobile-s) and (max-width: $tablet-l)
+		font-size: 38px
+		line-height: 38px
+	@media only screen and (min-width: $tablet-l) and (max-width: 1365px)
+		font-size: 80px
+		line-height: 80px
+
+h2
+	font-family: $fontFamily
+	font-style: normal
+	font-weight: 700
+	font-size: 36px
+	line-height: 44px
+	color: $color-black
+	@media only screen and (min-width: $mobile-s) and (max-width: $tablet-l)
+		font-size: 30px
+		line-height: 40px
+	@media only screen and (min-width: $tablet-l) and (max-width: $desktop-s)
+		font-size: 32px
+		line-height: 32px
+//
+//h3, .h3
+//	font-family: $fontFamily
+//	font-style: normal
+//	font-weight: 500
+//	font-size: 24px
+//	line-height: 34px
+//	@media only screen and (min-width: $mobile-s) and (max-width: $tablet-l)
+//		font-size: 20px
+//		line-height: 30px
+//	@media only screen and (min-width: $tablet-l) and (max-width: $desktop-s)
+//h4, .h4
+//	font-family: $fontFamily
+//	font-size: 20px
+//	font-weight: 700
+//	margin-top: 40px
+//	margin-bottom: 20px
+//h5, .h5
+//	font-family: $fontFamily
+//	font-size: 18px
+//	font-weight: 400
+//	margin-top: 20px
+//	margin-bottom: 20px
+//h6, .h6
+//	font-family: $fontFamily
+//	margin-top: 20px
+//	margin-bottom: 20px
+
+// -------
+
+//.text-small
+//	font-family: $fontFamily
+//	font-style: normal
+//	font-weight: 400
+//	font-size: 20px
+//	line-height: 30px
+//	color: $color-white
+//	@media only screen and (min-width: $mobile-s) and (max-width: $tablet-l)
+//		font-size: 16px
+//		line-height: 24px
+//	@media only screen and (min-width: $tablet-l) and (max-width: 1364px)
+//		font-size: 16px
+//		line-height: 24px
+//
+//.text-small_black
+//	font-family: $fontFamily
+//	font-style: normal
+//	font-weight: 400
+//	font-size: 20px
+//	line-height: 30px
+//	color: $color-black
+//	@media only screen and (min-width: $mobile-s) and (max-width: $tablet-l)
+//		font-size: 16px
+//		line-height: 24px
+//	@media only screen and (min-width: $tablet-l) and (max-width: 1364px)
+//		font-size: 16px
+//		line-height: 24px
+
+
+p
+	font-family: $fontFamily
+	font-style: normal
+	font-weight: 400
+	font-size: 24px
+	line-height: 34px
+	text-align: center
+	color: $color-black
+	@media only screen and (min-width: $mobile-s) and (max-width: $tablet-l)
+		font-size: 16px
+		line-height: 24px
+	@media only screen and (min-width: $tablet-l) and (max-width: 1360px)
+		font-size: 20px
+		line-height: 26px
+	@media only screen and (min-width: $desktop-s) and (max-width: $desktop-m)
+		font-family: $fontFamily
+		font-size: 24px
+		line-height: 34px
+
+//ul, ol
+//	padding-left: 40px
+//	margin-top: 20px
+//	margin-bottom: 20px
+b, strong
+	font-weight: 700
+i, em
+	font-style: italic
+sup
+	font-size: 85%
+	line-height: 0
+	vertical-align: baseline
+	position: relative
+	top: -0.45em
+sub
+	font-size: 85%
+	line-height: 0
+	vertical-align: baseline
+	position: relative
+	top: 0.2em
+u
+	text-decoration: underline
+
+blockquote
+	position: relative
+	&:before,
+	&:after
+		//font-family: "Times New Roman"
+		color: #bdbdbd
+		font-size: 3em
+		line-height: 0.1em
+		vertical-align: -.45em
+		display: inline-block
+
+	&:before
+		content: "\201C"
+		margin-right: 5px
+	&:after
+		content: "\201D"
+		margin-left: 5px
+
+code
+	font-family: monospace
+
+
+//a
+//	+border-text()
+//	&:hover
+//		color: $color-red
+//		border-color: rgba($color-red, .3)
+//
+//// -------
+
+p + ul,
+p + ol
+	margin-top: -20px

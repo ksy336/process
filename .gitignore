@@ -1,0 +1,24 @@
+# dependencies
+/node_modules
+
+# .IDEs
+.idea
+.vscode
+
+# production
+/build/
+/builds/
+build*
+/dist/
+dist*
+/dev/
+/storybook-static/
+
+# misc
+.env*
+
+# debug
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

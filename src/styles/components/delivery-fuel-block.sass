@@ -1,0 +1,148 @@
+.delivery-fuel-block
+	margin-top: 100px
+	background: $color-background
+.delivery-container h2
+	margin-bottom: 34px
+.delivery-container
+	padding-top: 74px
+	padding-bottom: 73px
+.delivery-card-block.layout-3-column
+	display: flex
+	//align-items: center
+	@media only screen and (min-width: $mobile-s) and (max-width: $tablet-l)
+		flex-direction: column
+		flex-wrap: wrap
+.form-list
+	flex-basis: 409px
+	margin-right: 71px
+	@media only screen and (min-width: $mobile-s) and (max-width: $tablet-l)
+		flex-basis: 100%
+
+.card-delivery
+	flex-basis: 638px
+	@media only screen and (min-width: $mobile-s) and (max-width: $tablet-l)
+		flex-basis: 100%
+.form-block-fuel
+	display: flex
+	flex-direction: column
+	margin-bottom: 16px
+	//align-items: center
+.form-block-fuel label
+	font-style: normal
+	font-weight: 500
+	font-size: 12px
+	line-height: 15px
+	color: $color-black
+	display: inline-block
+	margin-bottom: 8px
+.form-block-fuel select,
+.form-block-fuel input
+	border: 1px solid $color-border
+	height: 46px
+	width: 409px
+	padding-top: 13px
+	padding-bottom: 16px
+	padding-left: 15px
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	line-height: 17px
+	color: $color-black
+	@media only screen and (min-width: $mobile-s) and (max-width: $tablet-l)
+		width: 200px
+
+.input-range
+	font-style: normal
+	font-weight: 400
+	font-size: 14px
+	line-height: 17px
+	color: $color-black !important
+	border-bottom: none !important
+	display: inline-block
+
+.input-range::placeholder
+	color: $color-black !important
+.slider
+	-webkit-appearance: none
+	width: 100%
+	padding: 0 !important
+	height: 3px !important
+	border-radius: 5px
+	background: $color-button !important
+	outline: none
+	-webkit-transition: .2s
+	transition: opacity .2s
+	z-index: 100
+
+.slider::-webkit-slider-thumb
+	-webkit-appearance: none
+	appearance: none
+	width: 16px
+	height: 16px
+	background: $color-button
+	cursor: pointer
+	border-radius: 50%
+.slider::-moz-range-thumb
+	width: 16px
+	height: 16px
+	border-radius: 50%
+	background: $color-button
+	cursor: pointer
+
+.card-delivery
+	background: #FFFFFF
+	box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1)
+	padding: 40px
+.all-block
+	border-bottom: 1px solid $color-grey-border
+.all-text
+	font-style: normal
+	font-weight: 500
+	font-size: 24px
+	line-height: 29px
+	color: $color-black
+	display: inline-block
+	margin-bottom: 16px
+.delivery-price
+	padding-top: 16px
+	padding-bottom: 16px
+	display: flex
+	justify-content: space-between
+	border-bottom: 1px solid $color-grey-border
+.delivery-price span
+	font-style: normal
+	font-weight: 400
+	font-size: 16px
+	line-height: 140%
+	color: $color-black
+
+.delivery-description span
+	font-style: normal
+	font-weight: 400
+	font-size: 12px
+	line-height: 15px
+	color: #565656
+	width: 346px
+	display: inline-block
+.delivery-description
+	border-bottom: 1px solid $color-grey-border
+	padding-bottom: 16px
+
+.no-border
+	border-bottom: none !important
+	margin-bottom: 10px
+	padding-bottom: 0 !important
+.no-bottom-border
+	border-bottom: none !important
+	padding-bottom: 0 !important
+.big-text
+	font-weight: 600 !important
+	font-size: 18px !important
+	line-height: 22px !important
+	display: inline-block
+
+.last-block
+	padding-bottom: 32px
+.button-submit-delivery
+	width: 258px
+	height: 46px
