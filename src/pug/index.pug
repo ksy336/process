@@ -227,50 +227,56 @@ block body
 								span Если у заказчика есть действующий договор на топливные карты, то при оплате можно провести транзакцию через терминал. Переносное устройство есть у каждого заправщика
 		article.plus-content
 			.wrapper
-				h2 Преимущества сервиса
+				h2.advanteges-text Преимущества сервиса
 				.plus-container.layout-3-column
 					.plus-block
 						.img-group
-							span Качество топлива
-							img(src=require('Images/Group.svg'))
+							img(src=require('Images/certificate.svg'))
 						.text-block
+							span Качество топлива
 							p Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.
 					.plus-block
 						.img-group
-							span Бережем ваше время и нервы
+
 							img(src=require('Images/clock.svg'))
 						.text-block
+							span Бережем ваше время и нервы
 							p Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.
 					.plus-block
 						.img-group
-							span Цена
+
 							img(src=require('Images/ruble.svg'))
 						.text-block
+							span Цена
 							p Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.
 					.plus-block
 						.img-group
-							span Ваш комфорт—наша забота
+
 							img(src=require('Images/place.svg'))
 						.text-block
+							span Ваш комфорт—наша забота
 							p Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.
 					.plus-block
 						.img-group
-							span Безопасность процесса
+
 							img(src=require('Images/shield.svg'))
 						.text-block
+							span Безопасность процесса
 							p Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.
 					.plus-block
 						.img-group
-							span Несколько ТС в одном месте?
+
 							img(src=require('Images/way.svg'))
 						.text-block
+							span Несколько ТС в одном месте?
 							p Aliquam rhoncus et massa adipiscing risus leo nec lacus, sagittis. Eu, purus ac nisi sit eget sed et, adipiscing felis.
 		article.certificates
 			.wrapper
 				.certifivates-heading
-				h2 Сертификаты качества топлива
-				img(src=require("Images/arrow left.png"))
-				img(src=require("Images/arrow right.png"))
+					h2 Сертификаты качества топлива
+					.slider-img
+						img.image-slider(src=require("Images/arrow left.png"))
+						img.image-slider(src=require("Images/arrow right.png"))
 				.certificates-container.layout-4-column
 					.card-certificate
 						img(src=require("Images/image 1.png"))
@@ -282,16 +288,16 @@ block body
 						img(src=require("Images/image 3.png"))
 		article.partners
 			.wrapper
-				h2 Наши партнеры
+				h2.partners-text Наши партнеры
 				.partners-container.layout-4-column
-					.card-partners
-						img(src=require("Images/LUK_OIL_Logo_kyr 1.png"))
-					.card-partners
-						img(src=require("Images/gazprom.png"))
-					.card-partners
-						img(src=require("Images/Rosneft_Logo 1.png"))
-					.card-partners
-						img(src=require("Images/Tatneft-Logo 1.png"))
+					.card-partners.first-partner
+						img.lukoil-img(src=require("Images/LUK_OIL_Logo_kyr 1.png"))
+					.card-partners.second-partner
+						img.gazprom-img(src=require("Images/gazprom.png"))
+					.card-partners.third-partner
+						img.rosneft-img(src=require("Images/Rosneft_Logo 1.png"))
+					.card-partners.fourth-partner
+						img.tatneft-img(src=require("Images/Tatneft-Logo 1.png"))
 		article.feedback
 			.wrapper
 				.feedback-heading
