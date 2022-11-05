@@ -298,35 +298,39 @@ block body
 						img.rosneft-img(src=require("Images/Rosneft_Logo 1.png"))
 					.card-partners.fourth-partner
 						img.tatneft-img(src=require("Images/Tatneft-Logo 1.png"))
+				.dots
 		article.feedback
-			.wrapper
+			.wrapper.feedback-content
 				.feedback-heading
 					h2 Отзывы
-					img(src=require("Images/arrow left.png"))
-					img(src=require("Images/arrow right.png"))
+					.slider-img
+						img.image-slider(src=require("Images/arrow left.png"))
+						img.image-slider(src=require("Images/arrow right.png"))
 				.feedback-container.layout-2-column
 					.text-feedback
 						span Гусев Вячеслав
-						span Индивидуальный предприниматель
-						p.text-description Velit, lectus sit urna tincidunt augue. Cursus vulputate pellentesque faucibus euismod. Diam pharetra, non, ut integer dui feugiat porttitor at. Non, dignissim enim viverra fringilla sit. Etiam justo a dignissim sociis vitae, nisi, justo, feugiat.
+						.feedback-job Индивидуальный предприниматель
+						p.text-description.first-text-feedback Velit, lectus sit urna tincidunt augue. Cursus vulputate pellentesque faucibus euismod. Diam pharetra, non, ut integer dui feugiat porttitor at. Non, dignissim enim viverra fringilla sit. Etiam justo a dignissim sociis vitae, nisi, justo, feugiat.
+						a.more-info(href="#") Подробнее
 					.text-feedback
 						span Зеленов Евгений
-						span Гененеральный директор трансопртной компании
+						.feedback-job Гененеральный директор трансопртной компании
 						p.text-description  Mi auctor sit habitasse sed mi cras ullamcorper massa sed. In augue fames sodales pretium, at scelerisque. Pulvinar a mattis pharetra mi, aliquet sem tristique lorem eleifend. Nisl, scelerisque ut libero, pellentesque. Tincidunt vestibulum volutpat lacus imperdiet morbi vulputate tristique facilisi.
-						a(href="#") Подробнее
+						a.more-info(href="#") Подробнее
 				button.button-ask Читать все отзывы
-
-		footer.footer
+		article.ask-block
 			.wrapper
-				.footer-container
+				.ask-container
 					h2 Остались вопросы
-					p Готовы ответить на любой Ваш вопрос. Оставьте свой номер телефона и мы свяжемся с вами в ближайшее время
-					form.form-feedback
+					p Готовы ответить на любой Ваш вопрос. Оставьте свой номер телефона и мы <br /> свяжемся с вами в ближайшее время
+					form.input-info.input-feedback
 						input(placeholder="Ваше имя" type="text")
 						input(placeholder="Номер телефона" type="tel")
-						button.feedback Перезвоните мне
-						span Нажимая на кнопку "Перезвонить мне" я соглашаюсь с
-							span политикой конфиденциальности
+						button.feedback-button Перезвоните мне
+					span.phone-me-text Нажимая на кнопку "Перезвонить мне" я соглашаюсь с
+						span политикой конфиденциальности
+		footer.footer
+			.wrapper
 				.footer-last-content.layout-4-column
 					.logo-block
 						img(src=require('Images/logo.png'))
