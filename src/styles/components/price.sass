@@ -4,3 +4,190 @@
 		padding-top: 40px
 .price-content h2
 	margin-bottom: 48px
+.price-table-head
+	//display: flex
+	//justify-content: space-between
+	//align-items: center
+	padding: 19px 20px 21px
+	background: $color-header-table
+	display: grid
+	grid-template-columns: 163px 1fr 1fr 1fr 147px
+	@media only screen and (min-width: $mobile-s) and (max-width: 768px)
+		display: flex
+		flex-direction: column
+
+.price-table-head span
+	font-style: normal
+	font-weight: 600
+	font-size: 13px
+	line-height: 16px
+	color: $color-white
+
+.price-table-body.layout-3-column
+	display: grid
+	grid-template-columns: 163px 1fr 1fr 1fr 167px
+	margin-top: 20px
+	margin-bottom: 20px
+	grid-auto-rows: minmax(16px, auto)
+	@media only screen and (min-width: $mobile-s) and (max-width: 768px)
+		display: flex
+		flex-direction: column
+.price-table-body.layout-3-column > *
+	padding-top: 16px
+	padding-bottom: 16px
+	border-top: 1px solid $color-grey-border
+	border-bottom: 1px solid $color-grey-border
+	@media only screen and (min-width: $mobile-s) and (max-width: 768px)
+		padding-left: 20px
+		width: 100%
+.box1
+	grid-column-start: 1
+	grid-column-end: 2
+	grid-row-start: 1
+	grid-row-end: 6
+	background: $color-button
+	height: 255px
+	font-style: normal
+	font-weight: 700
+	font-size: 24px
+	line-height: 29px
+	color: $color-white
+	padding-left: 20px
+	border: none !important
+	@media only screen and (min-width: $mobile-s) and (max-width: 768px)
+		width: 100%
+		height: 100%
+
+.block95
+	height: 400px
+	grid-column-start: 1
+	grid-column-end: 2
+	grid-row-start: 1
+	grid-row-end: 9
+	background: $color-button
+	font-style: normal
+	font-weight: 700
+	font-size: 24px
+	line-height: 29px
+	color: $color-white
+	padding-left: 20px
+	border: none !important
+	@media only screen and (min-width: $mobile-s) and (max-width: 768px)
+		width: 100%
+		height: 100%
+.box2
+	grid-column-start: 2
+	grid-column-end: 3
+	grid-row-start: 1
+	grid-row-end: 4
+	padding-left: 20px
+	border-right: 1px solid $color-grey-border
+.box3
+	grid-column-start: 3
+	grid-column-end: 4
+	grid-row-start: 1
+	grid-row-end: 2
+
+.box6
+	grid-column-start: 3
+	grid-column-end: 4
+	grid-row-start: 2
+	grid-row-end: 3
+
+.box7
+	grid-column-start: 4
+	grid-column-end: 5
+	grid-row-start: 2
+	grid-row-end: 3
+
+.box8
+	grid-column-start: 5
+	grid-column-end: 6
+	grid-row-start: 2
+	grid-row-end: 3
+
+.box-euro
+	grid-column-start: 2
+	grid-column-end: 3
+	grid-row-start: 4
+	grid-row-end: 6
+	padding-left: 20px
+	border-right: 1px solid $color-grey-border
+.box-euro-3
+	grid-column-start: 2
+	grid-column-end: 3
+	grid-row-start: 6
+	grid-row-end: 9
+	padding-left: 20px
+	border-right: 1px solid $color-grey-border
+.text-fuel
+	font-style: normal
+	font-weight: 600
+	font-size: 13px
+	line-height: 16px
+	color: $color-black
+.box-ros
+	grid-column-start: 3
+	grid-column-end: 4
+	grid-row-start: 6
+	grid-row-end: 7
+	padding-left: 15px
+.box-price
+	grid-column-start: 4
+	grid-column-end: 5
+	grid-row-start: 6
+	grid-row-end: 7
+	//padding-left: 15px
+.box-price-2
+	grid-column-start: 5
+	grid-column-end: 6
+	grid-row-start: 6
+	grid-row-end: 7
+.box12-gaz
+	grid-column-start: 3
+	grid-column-end: 4
+	grid-row-start: 7
+	grid-row-end: 8
+	padding-left: 15px
+.box13-gaz
+	grid-column-start: 4
+	grid-column-end: 5
+	grid-row-start: 7
+	grid-row-end: 8
+.box14-gaz
+	grid-column-start: 5
+	grid-column-end: 6
+	grid-row-start: 7
+	grid-row-end: 8
+.box15-lukoil
+	grid-column-start: 3
+	grid-column-end: 4
+	grid-row-start: 8
+	grid-row-end: 9
+	padding-left: 15px
+.box16-lukoil
+	grid-column-start: 4
+	grid-column-end: 5
+	grid-row-start: 8
+	grid-row-end: 9
+.box17-lukoil
+	grid-column-start: 5
+	grid-column-end: 6
+	grid-row-start: 8
+	grid-row-end: 9
+.box5,
+.box8,
+.box11,
+.box14,
+.box17,
+.box-price-2,
+.box14-gaz,
+.box17-lukoil
+	border-right: 1px solid $color-grey-border
+
+.box3,
+.box6,
+.box9,
+.box12,
+.box15
+	padding-left: 15px
